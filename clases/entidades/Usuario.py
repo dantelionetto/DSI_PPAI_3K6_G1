@@ -1,13 +1,15 @@
+import datetime
+
 
 class Usuario:
-    def __int__(self, caducidad, contra, nombre, empleado):
+    def __int__(self, caducidad=datetime.datetime.now(), contra="", nombre="", empleado=None):
         self.caducidad = caducidad
         self.contrasena = contra
         self.nombre = nombre
         self.empleado = empleado
 
-    def conocerEmpleado(self):
+    def conocer_empleado(self):
         pass
-    
-    def obtenerEmpleado(self):
-        pass
+
+    def obtener_empleado(self):
+        return self.empleado
