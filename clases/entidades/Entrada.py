@@ -39,5 +39,14 @@ class Entrada:
         hora_actual = datetime.datetime.time()
         if sede == self.get_sede() and self.get_fecha_venta() == fecha_actual and self.get_hora_venta() == hora_actual:
             resultado = True
-            
+
         return resultado
+
+    def new(self,fecha_venta=datetime.date.today(), hora_venta=datetime.datetime.time(), numero=-1, monto=-1,
+                 sede=None, tarifa=None):
+        self.fecha_venta = fecha_venta
+        self.hora_venta = hora_venta
+        self.numero = numero
+        self.monto = monto
+        self.sede = sede
+        self.tarifa = tarifa

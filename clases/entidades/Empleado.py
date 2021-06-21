@@ -16,16 +16,7 @@ class Empleado:
         self.nombre = nombre
         self.sexo = sexo
         self.telefono = telefono
-        self.sede_donde_trabaja=sede
-
-    def conocer_cargo(self):
-        pass
-
-    def conocer_horaririo(self):
-        pass
-
-    def esDeSede(self):
-        pass
+        self.sede_donde_trabaja = sede
 
     def get_nombre(self):
         return self.nombre
