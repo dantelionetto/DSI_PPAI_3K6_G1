@@ -44,6 +44,9 @@ class Entrada:
 
     def new(self,fecha_venta=datetime.date.today(), hora_venta=datetime.datetime.time(), numero=-1, monto=-1,
                  sede=None, tarifa=None):
+        """"
+        Alternativa de inicialización para no utilizar la definición con __init__
+        """
         self.fecha_venta = fecha_venta
         self.hora_venta = hora_venta
         self.numero = numero
