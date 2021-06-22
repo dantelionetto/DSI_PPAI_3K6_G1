@@ -36,7 +36,7 @@ class ImpresorEntradas():
         pdf.set_font('Arial', '', 16)
         pdf.cell(0, h=10, txt='Visita: ' + tipo_visita, align='C', ln=1)
         pdf.line(0, 80, 210, 80)
-        pdf.output('C:\\users\\maxi\\documents\\entrada' + str(numero) + '.pdf', 'F')
+        pdf.output('entrada' + str(numero) + '.pdf', 'F')
 
 
 
