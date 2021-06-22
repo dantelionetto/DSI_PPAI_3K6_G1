@@ -11,12 +11,6 @@ class Entrada:
         self.sede = sede
         self.tarifa = tarifa
 
-    def conocer_sede(self):
-        pass
-
-    def conocer_tarifa(self):
-        pass
-
     def get_numero(self):
         return self.numero
 
@@ -37,12 +31,13 @@ class Entrada:
         resultado = False
         fecha_actual = datetime.date.today()
         hora_actual = datetime.datetime.time()
-        if sede == self.get_sede() and self.get_fecha_venta() == fecha_actual and self.get_hora_venta() == hora_actual:
+
+        if sede == self.sede and self.fecha_venta == fecha_actual and self.hora_venta == hora_actual:
             resultado = True
 
         return resultado
 
-    def new(self,fecha_venta=datetime.date.today(), hora_venta=datetime.datetime.time(), numero=-1, monto=-1,
+    def new(self, fecha_venta=datetime.date.today(), hora_venta=datetime.datetime.utcnow(), numero=-1, monto=-1,
                  sede=None, tarifa=None):
         """"
         Alternativa de inicialización para no utilizar la definición con __init__
