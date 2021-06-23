@@ -1,7 +1,10 @@
 import tkinter as  tk
 
-
+#Se crea la clase PantallaSala
 class PantallaSala():
+
+    #La funcion act_cant_visitantes toma por parametro la Cantidad Maxima de Visitantes que puede tener una Sede 
+    # y la Cantidad Actual de Visitantes en la Sede, los muestra a traves de una ventana creada con Tkinter que simula la Pantalla en la Entrada y Salida de la Sede del Museo
     def act_cant_visitantes(self, cant_max, cant_actual):
         cant_maxima_visitantes = 'CAPACIDAD MAXIMA: ' + str(cant_max)
         cant_actual_visitantes = 'VISITANTES ACTUALES: ' + str(cant_actual)
