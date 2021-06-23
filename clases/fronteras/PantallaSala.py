@@ -1,7 +1,6 @@
 import tkinter as  tk
 
 
-
 class PantallaSala():
     def act_cant_visitantes(self, cant_max, cant_actual):
         cant_maxima_visitantes = 'CAPACIDAD MAXIMA: ' + str(cant_max)
@@ -18,8 +17,3 @@ class PantallaSala():
         self.current_max_label.configure(text= cant_maxima_visitantes)
         self.current_act_label.configure(text=cant_actual_visitantes)
         self.window.mainloop()
-
-
-       
-pantalla = PantallaSala()
-pantalla.act_cant_visitantes(30, 10)
